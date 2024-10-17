@@ -1,0 +1,160 @@
+/* General */
+body {
+  font-family: 'Poppins', sans-serif; /* Fuente más moderna */
+  font-size: 16px; /* Tamaño de fuente consistente */
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  line-height: 1.6; /* Espaciado entre líneas para mejor legibilidad */
+}
+
+/* Header */
+header {
+  background-color: #692020;
+  color: white;
+  padding: 30px 0; /* Espaciado mayor */
+  text-align: center;
+  position: relative ;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Logo */
+.logo {
+  width: 400px;
+  height: auto;
+  margin: 0 auto; /* Centrar horizontalmente */
+  display: block;
+}
+
+/* Navegación */
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 5px;
+  text-align: center;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin: 0 25px; /* Más espacio entre opciones */
+}
+
+header nav ul li a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #ff6347; /* Efecto hover con color Tomato */
+}
+
+/* Main */
+#main {
+  padding: 40px;
+  text-align: left;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Slider */
+.slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0; /* Espaciado mayor */
+}
+
+.slider {
+  position: relative;
+  width: 80%;
+  max-width: 1000px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.slides {
+  display: flex;
+  transition: transform 1s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.slide img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+/* Grid Content */
+#main-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px; /* Más espacio entre filas */
+  margin-top: 40px;
+}
+
+/* Videos */
+.video {
+  background-color: #2c2c2c;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.video:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.thumbnail {
+  width: 100%;
+  height: 200px; /* Ajusté la altura para mayor visibilidad */
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.video:hover .thumbnail {
+  opacity: 0.3;
+}
+
+.video-info {
+  padding: 20px;
+  text-align: center; /* Centrado del texto */
+}
+
+.video-info h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #fff;
+}
+
+.video-info p {
+  margin: 5px 0;
+  color: #aaa;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px; /* Espaciado mayor */
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
